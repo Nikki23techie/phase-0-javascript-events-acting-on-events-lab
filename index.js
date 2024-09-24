@@ -18,19 +18,22 @@ document.addEventListener("keydown", function (event) {
 
 function moveDodgerLeft() {
     const leftNumbers = dodger.style.left.replace("px", "");
-    const left = parseInt(leftNumbers, 10);
-    console.log("moveLeft:" + left);
-    if (left > 0) { 
-        dodger.style.left = `${left - 1}px`;
+    const pos = parseInt(leftNumbers, 10);
+    console.log("moveLeft:" + pos);
+    if (pos > 0) { 
+        dodger.style.left = `${pos - 1}px`;
+        (pos -1)  +  "px"
     }
 }
 
 function moveDodgerRight()  {
     const leftNumbers = dodger.style.left.replace("px", "");
-    const left = parseInt(leftNumbers, 10);
-    console.log("moveRight:" + left);
-    if (left < 256) {
-        dodger.style.left = `${left + 1}px`;
+    const pos = parseInt(leftNumbers, 10);
+    console.log("moveRight:" + pos);
+    if (pos < 256) {
+        dodger.style.left = `${pos + 1}px`;
     }
 }
   
+
+
